@@ -9,14 +9,13 @@ It's a sad day. There are now ads in Wireshark. 🙁 Here's how to remove them.
 
 Needless to say, I was shocked when I saw this new "feature". Sure, it might be nice to have handy links to documentation and events like Sharkfest, but I definitely don't want them inside the app I use daily for troubleshooting purposes.
 
-![image](2026-05-29-image1.png)
-
+![image]({{ "/assets/img/posts/2026-05-29-image1.png" | relative_url }})
 ## Update
 (Thanks Anders for pointing this out!)
 
 In the Edit>Preferences section, there is now an Appearance>Welcome Page section. You can go there and simply uncheck everything.
 
-![image](2026-05-29-image2.png)
+![image]({{ "/assets/img/posts/2026-05-29-image2.png" | relative_url }})
 
 
 ## Original post
