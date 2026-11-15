@@ -22,7 +22,7 @@
     
                 {% if site.logo and site.logo2 %}
                 <img src='{{site.logo | relative_url}}' onmouseover="this.src='{{site.logo2 | relative_url}}';" onmouseout="this.src='{{site.logo | relative_url}}';" alt="Logo" style="height: 128px; width: 128px;" />
-                {% elif site.logo %}
+                {% elsif site.logo %}
                 <img src='{{site.logo | relative_url}}' alt="Logo" style="height: 128px; width: 128px;" />
                 {% endif %}
                 <br />
