@@ -5,6 +5,7 @@ plugins:
 - jekyll-remote-theme
 show_downloads: false
 google_analytics: G-S3MJE293S0
+page_excerpts: true
 excerpt_separator: <!--more-->
 logo: assets/img/logo.png
 paginate: 5 # amount of posts to show
