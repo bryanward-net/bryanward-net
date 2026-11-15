@@ -6,5 +6,6 @@ plugins:
 show_downloads: false
 google_analytics: G-S3MJE293S0
 excerpt_separator: <!--more-->
+logo: logo.png
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
