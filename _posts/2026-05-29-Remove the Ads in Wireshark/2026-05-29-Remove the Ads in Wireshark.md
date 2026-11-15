@@ -1,4 +1,11 @@
+---
+layout: post
+title: "Remove the Ads in Wireshark"
+date: 2026-05-29 00:00:00 -0000
+---
 It's a sad day. There are now ads in Wireshark. 🙁 Here's how to remove them.
+
+<!--more-->
 
 Needless to say, I was shocked when I saw this new "feature". Sure, it might be nice to have handy links to documentation and events like Sharkfest, but I definitely don't want them inside the app I use daily for troubleshooting purposes.
 
