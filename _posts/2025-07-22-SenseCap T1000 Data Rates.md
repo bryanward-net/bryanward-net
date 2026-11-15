@@ -23,9 +23,9 @@ At least for the US915 region, RP 1.0.3…
 
 If you want to buy a T1000, here are links to do so! Use Promo Code `TP0LTI8P` for a discount!
 
-T1000-A for LoRaWAN or Helium
+[T1000-A for LoRaWAN or Helium](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-A-p-5697.html?sensecap_affiliate=Kdtuj1U&referring_service=link)
 
-T1000-E for Meshtastic
+[T1000-E for Meshtastic](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html?sensecap_affiliate=Kdtuj1U&referring_service=link)
 
-T1000-E for LoRaWAN Open Source
+[T1000-E for LoRaWAN Open Source](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-LoRaWAN-p-6408.html?sensecap_affiliate=Kdtuj1U&referring_service=link)
 
