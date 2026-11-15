@@ -7,6 +7,8 @@ tags: ["juniper", "mist", "ssr"]
 ---
 Once an SSR appliance is connected to the Mist cloud, it's easy to make changes to the config. However, if your ISP has assigned a Static IP Address, you'll need to know how to set that on the SSR using the console port before it will be able to phone-home to the Mist cloud.
 
+<!--more-->
+
 Getting into the console of the SSR is similar to Junos devices. Connect to the serial port using 115200 baud 8N1. Then, log in using the `root` username and the default out-of-box password of `128tRoutes`. This is case-sensitive. The password will be changed by Mist once it phones home. You'll then be at the root shell. To get to the CLI, you now need to run `su admin` instead of `cli` like you would on Junos. This will bring you to the PCLI interface, which functions similarly to the Junos CLI, but do note that this is not Junos and the command/config language is quite different.
 
 ```

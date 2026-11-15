@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "SenseCap T1000 Data Rates"
 date: 2025-07-22 00:00:00 -0000
 ---

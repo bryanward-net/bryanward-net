@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Remove the Ads in Wireshark"
 date: 2026-05-29 00:00:00 -0000
 ---
