@@ -1,27 +1,31 @@
 # Contact Me
 
-The best way to get in touch is to find me on one of the many Slack workspaces I hang out on:
+The best way to get in touch is to find me on one of the many Slack workspaces and/or email lists I hang out on:
 
-* PacketPushers
-* Wi-Fi Pros (email to request an invitation)
-* NetDev
-* Network to Code
-* Network Automation Forum
-* Clear to Send
-* MacAdmins
-* USNUA
-* NANOG
+* [PacketPushers](https://packetpushers.net/community/)
+* [Wi-Fi Pros](mailto:slackadmin@thewifiprosslack.com) (email to request an invitation)
+* [NetDev](https://netdev.chat/)
+* [Network to Code](https://slack.networktocode.com/)
+* [Network Automation Forum](https://networkautomation.forum/)
+* [Clear to Send](http://cleartosend.net/join-slack)
+* [MacAdmins](https://www.macadmins.org/)
+* [USNUA](http://slack.usnua.com/)
+* NANOG Mailing List
 * Internet2
 * eduroam
-* and a few other invite-only ones.
+* [HENCG](http://slack.usnua.com/)
+
+and a few other invite-only ones.
 
 I’m **not** on LinkedIn, Facebook, Instagram, Snapchat, Tiktok, MySpace, Friendster, or any other social media platform. Don’t bother looking for me.
 
 You might see me on reddit, though I don’t post new content there.
 
+Check me out on [Printables](https://www.printables.com/@BryanWard_3437544)
+
 I do have a Bluesky and Twitter account, but I don't use them anymore.
 
-* https://bsky.app/profile/bryanward.net
-* https://x.com/_bryan_ward_ (That’s 3 underscores.)
+* [Bluesky @bryanward.net](https://bsky.app/profile/bryanward.net)
+* [Twitter _bryan_ward_ ](https://x.com/_bryan_ward_) (That’s 3 underscores.)
 
 If IRC becomes popular again, please let me know.
