@@ -18,29 +18,20 @@
     <div class="wrapper">
         <header>
             <div style="text-align: center">
-                <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+                <h1><a href="{{ "/index.html" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
     
                 {% if site.logo %}
                 <img src="{{site.logo | relative_url}}" alt="Logo" style="height: 128px; width: 128px;" />
                 {% endif %}
                 <br />
                     <div style="padding-top: 20px;">
-                <h2><a href="{{ "about.md" | relative_url }}">About</a></h2>
+                <h2><a href="{{ "about.html" | relative_url }}">About</a></h2>
             </div>
             </div>
         </header>
         <section>
 
             {{ content }}
-
-            <ul>
-              {% for post in site.posts %}
-                <li>
-                  <a href="{{ post.url }}">{{ post.title }}</a>
-                  {{ post.excerpt }}
-                </li>
-              {% endfor %}
-            </ul>
 
         </section>
         <footer>
