@@ -18,7 +18,7 @@
     <div class="wrapper">
         <header>
             <div style="text-align: center">
-                <h1><a href="{{ "/index.html" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+                <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
     
                 {% if site.logo %}
                 <img src="{{site.logo | relative_url}}" alt="Logo" style="height: 128px; width: 128px;" />
@@ -31,7 +31,11 @@
         </header>
         <section>
 
-            {{ content }}
+            {% for post in site.posts limit:5 %}
+            <article>
+                {% include article.html %}
+            </article>
+            {% end %}
 
         </section>
         <footer>
