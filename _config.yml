@@ -1,3 +1,5 @@
 theme: jekyll-theme-minimal
 title: Bryan Ward
 description: BryanWard.net
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
