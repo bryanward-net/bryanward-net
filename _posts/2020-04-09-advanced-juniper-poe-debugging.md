@@ -7,6 +7,8 @@ tags: ["juniper", "junos"]
 ---
 I’ve come across a few instances where I’m troubleshooting WiFi APs that won’t power on or stay powered on. Fortunately, the issues were bad wiring or patch cords, but I did quite a bit of digging into the labyrinth of hamster wheels that make up a Juniper switch and discovered some very low level commands that proved useful. My attempt to document them is below.
 
+<!--more-->
+
 In the chassisd log file, have you ever come across something like `CHASSISD_UI_POE_ERR: PoE port name mge-0/0/45 status 61` and wondered what the heck “status 61” means? Let’s find out!
 
 I should, at this point, issue a disclaimer. I have no idea what some of the commands available in this “hidden” shell do or what trouble they may cause. There is little to no documentation publicly available, and JTAC didn’t even offer this to me (or know about it?) while I was troubleshooting a PoE issue.
@@ -111,7 +113,7 @@ Port Operation: 2Pair.
 **Port is on: Valid Resistor detected.**  
 This is the line to watch. With nothing connected to the port, it shows `Port is off: detection is in process`. Okay, that makes sense. What about when there’s a bad cable? Let’s run the command again with a cable that pins out like this on one end:
 
-![](/assets/images/2020-04-09-image1.png)
+![image]({{ "/assets/img/posts/2020-04-09-image1.png" | relative_url }})
 
 I feel so dirty after having made this.
 
@@ -149,7 +151,7 @@ Downshift                       : N/A
 
 The EtherScope even knows something’s wrong, but since I don’t have my wire map dongles with me, it can’t quite figure it out exactly either:
 
-![](/assets/images/2020-04-09-image2.png)
+![image]({{ "/assets/img/posts/2020-04-09-image2.png" | relative_url }})
 
 And let’s run the autotest on the EtherScope while it’s connected to the switch and see what happens. Here, hold my beer!
 
@@ -180,7 +182,7 @@ Port Mode: AF/AT Mode.
 Port Operation: 2Pair.
 ```
 
-![](/assets/images/2020-04-09-image3.png)
+![image]({{ "/assets/img/posts/2020-04-09-image3.png" | relative_url }})
 
 Huh. It linked up at 100mbps and was able to provide power… albeit with a mix of 2 and 4 wires… Messing up cabling is harder than I thought. No wonder we pay contractors so much to do it!
 
@@ -192,7 +194,7 @@ Don’t worry little fella… you’ll only feel a pinch…
 
 This results in a test like this, which is sure to cause trouble!
 
-![](/assets/images/2020-04-09-image5.png)
+![image]({{ "/assets/img/posts/2020-04-09-image5.png" | relative_url }})
 
 OK, let’s turn on that ~~spot welder~~ switchport…
 

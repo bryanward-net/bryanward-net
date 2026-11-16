@@ -7,7 +7,9 @@ tags: ["juniper"]
 ---
 LLDP can send a lot of useful information. One thing I discovered was that Juniper switches send their chassis serial number as a vendor-specific TLV. Ok, maybe not the most exciting discovery, but since Wireshark can’t decode this (yet), I thought I’d share.
 
-![](/assets/images/2020-04-02-image1.png)
+<!--more-->
+
+![image]({{ "/assets/img/posts/2020-04-02-image1.png" | relative_url }})
 
 The “Unknown Subtype Content” is actually the chassis serial number, encoded as ASCII.
 

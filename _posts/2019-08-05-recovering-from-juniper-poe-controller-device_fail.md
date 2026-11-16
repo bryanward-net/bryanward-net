@@ -7,6 +7,8 @@ tags: ["juniper", "junos"]
 ---
 As I install/upgrade a ton of new Juniper EX3400-48P edge switches in VCs, I’ve run into a few issues where upgrading Junos and then the PoE controller firmware results in the PoE Controller failing.
 
+<!--more-->
+
 Following a Junos software upgrade, I issued the following command to upgrade the PoE controllers of the switches. (Why this is a separate step is beyond me.)
 
 ```

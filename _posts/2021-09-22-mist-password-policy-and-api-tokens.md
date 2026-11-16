@@ -7,13 +7,15 @@ tags: ["mist"]
 ---
 Enabling a password or 2FA policy on Mist is quite a painless change, however there is a gotcha I encountered.
 
+<!--more-->
+
 To enable a password policy, goto Organization>Settings. Find the section labeled Password Policy. Check the boxes and call it a day.
 
-![](/assets/images/2021-09-22-image1.png)
+![image]({{ "/assets/img/posts/2021-09-22-image1.png" | relative_url }})
 
 This takes effect immediately. Users who do not have passwords that meet the policy, or who do not have 2FA setup for their account, will be blocked from logging into the GUI until they make the necessary changes. Currently logged-in users will not be logged out. These users will be redirected to the following screen at their next login:
 
-![](/assets/images/2021-09-22-image2.png)
+![image]({{ "/assets/img/posts/2021-09-22-image2.png" | relative_url }})
 
 The user should then enter a new password and check the “Enable Two Factor Authentication” box on the upper right, as needed.
 

@@ -7,13 +7,15 @@ tags: ["mist", "wifi"]
 ---
 My colleagues and I often get asked the same several questions regarding our decision at “A College” to choose [Mist](http://www.mist.com) as our WiFi vendor and [Juniper](http://www.juniper.com) as our switching/routing vendor. In this series of posts, I will be sharing my answers to those questions.
 
+<!--more-->
+
 ### How does it work without a controller?
 
 I’m going to draw on my experience with Cisco WLAN technology and reference designs since many of you are already familiar with those concepts and terminology. The short version is that Mist APs, without Mist Edge at least, function just like Cisco APs do in FlexConnect or H-REAP mode. WLAN client traffic is offloaded from the AP to the switch and is forwarded through the network from there. Client traffic does not get encapsulated or forwarded to a central controller – it appears as though the wireless clients are wired to the local switch.
 
 In the most basic sense, we are using the common 3-Layer network architecture. (Posts about our endeavors into overlay/underlay campus architecture will come in the future!) Core routers connect to Distribution Routers, and Distribution routers to building Edge Switches. Our current choice of edge switch is the [Juniper EX3400-48P](https://www.juniper.net/us/en/products-services/switching/ex-series/ex3400/), a powerful multi-layer switch with 48x 1G PoE+ ports, 4x 1/10G SFP+ cages, and 2x 40G QSFP+ cages to be used for stacking multiple switches in a Virtual Chassis or for even higher-speed uplinks. (A Virtual Chassis is similar to a Cisco StackWise stack.) For buildings where we will be deploying the Mist AP43 and WiFi 6 in high-density, we are evaluating the use of the [Juniper EX4300M](https://www.juniper.net/us/en/products-services/switching/ex-series/ex4300m/) series of switches which provide mGig ports and 802.3bt for over 90W of PoE power.
 
-![](/assets/images/2019-09-21-image1.png)
+![image]({{ "/assets/img/posts/2019-09-21-image1.png" | relative_url }})
 
 Juniper EX3400-48P
 
@@ -23,11 +25,11 @@ I’ve worked extensively with Cisco TAC over the past couple of years trying to
 
 So, anyway, enough about Cisco and back to Mist… Look at the diagram below.
 
-![](/assets/images/2019-09-21-image2.png)
+![image]({{ "/assets/img/posts/2019-09-21-image2.png" | relative_url }})
 
 It’s your typical reference design, not too scary, right? The campus has been wired up for many many years. Fiber optic cable and pathway went into the ground back when daisy-chaining and ring topology were popular. Obviously, nowadays, that’s a less than ideal design. However, because of that physical infrastructure, we ended up with about 2 dozen distribution routers around campus – often one per cluster of buildings. That actually translated quite nicely into Mist’s Sites concept. A Mist Site, at a wireless layer, is a group of APs within which a client can seamlessly roam. 802.11r and OKC happen within a Mist Site, but not between sites. Roaming between sites requires a full 4-way handshake. We ended up grouping each of our fiber optic distribution routers and attached downstream buildings into a Mist Site. That way, we are relying on the geographic boundaries of the campus to designate the roaming boundaries on the WLAN. Aside from my dream of someday providing seamless WLAN roaming both indoors and outdoors on the campus and surrounding area, this works out pretty well. Users would not expect to maintain their Wi-Fi connection when walking across campus from one building to another. So, we leverage that lack-of-expectation, and break up the Mist Sites in those locations as well.
 
-![](/assets/images/2019-09-21-image3.png)
+![image]({{ "/assets/img/posts/2019-09-21-image3.png" | relative_url }})
 
 A section of the campus map showing some of the divisions into Mist Sites.  
 Also, each area is a Fiber Optic hub/spoke zone and has a Layer 3 distribution router.

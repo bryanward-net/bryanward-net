@@ -7,6 +7,8 @@ tags: ["aws", "humor", "ikea"]
 ---
 There are more things available than you can see in a single visit, several of them you have no idea what they’re for.
 
+<!--more-->
+
 You always end up spending more than you planned on when you first arrived.
 
 You have to spend several hours putting everything together yourself, and it always takes longer than the instructions make it sound like it would.

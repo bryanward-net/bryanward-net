@@ -7,6 +7,8 @@ tags: ["juniper", "junos"]
 ---
 There are likely going to be other reasons why you may get an error upon committing a config such as:
 
+<!--more-->
+
 `CommitError(edit_path: DCD commit check failed, bad_element: None, message: error: DCD commit check process dumped core error: configuration check-out failed)`  
 or  
 `dcd[16947]: ../../../../../../src/junos/sbin/dcd/infra/db-param/param_access.c:dcd_param_set_iff_ptr_value:2248: insist ‘len <= iff_obj_maxlen[param_ix]’ failed`  

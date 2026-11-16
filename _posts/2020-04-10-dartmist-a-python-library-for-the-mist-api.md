@@ -7,6 +7,8 @@ tags: ["code", "mist"]
 ---
 Today, I am pleased to announce the first public release of [dartmist](https://www.bryanward.net/dartmist) [– A Python Library for the Mist API.](https://www.bryanward.net/dartmist)
 
+<!--more-->
+
 This library is, hopefully, a friendly way to interact with the Mist API. This was written by network engineers for network engineers. Features will be added to it over time.
 
 Additionally, I am releasing my [rolling-update](https://github.com/bryanward-net/mist-rolling-update) script for updating firmware on Mist APs, one at a time. I’ve been using variations of this script in production for a while now, and as I type this, it is churning away at a couple more sites in production. It is a definite time-saver!

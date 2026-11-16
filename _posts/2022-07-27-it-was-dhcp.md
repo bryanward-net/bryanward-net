@@ -7,13 +7,15 @@ tags: ["juniper", "junos", "marvis", "mist"]
 ---
 DHCP Security (or Snooping) is critical in a campus environment. Unfortunately, deploying it correctly always seems to have a snag.
 
+<!--more-->
+
 If you don’t know what DHCP-Security is, you should read up on it, especially if you’re operating a campus network. It can be a life saver! <https://www.juniper.net/documentation/us/en/software/junos/security-services/topics/concept/port-security-dhcp-snooping-els.html>
 
 I recently upgraded Junos from v18 to v21 and was pleased to hear that there were some “feature improvements” regarding DHCP Security coming my way with the new code. However, when the upgrade completed, I noticed that client devices in one building were no longer getting a valid DHCP Lease.
 
 Some of those client devices included Mist APs. Marvis was quick to realize what had gone wrong. It had correctly identified that Offers from my DHCP server were not making it all the way through to the edge of the network. Here’s an actual screenshot from the Mist interface. I redacted the site-specific details, but otherwise this is exactly what appeared on my screen.
 
-![](/assets/images/2022-07-27-image1.png)
+![image]({{ "/assets/img/posts/2022-07-27-image1.png" | relative_url }})
 
 Now, I’ll admit, I don’t have my switches integrated into the Mist ecosystem. If I had, maybe Marvis would have taken it a step further and said “Hey, DHCP-Security isn’t working as you might expect. Would you like me to fix that for you? Why are they even paying you anyway?” Or, rather, it likely would have just worked to begin with, as turning on DHCP-Security on a switch managed by Mist can be fairly simple:(<https://www.mist.com/documentation/configure-dhcp-snooping-for-switches-with-mist-wired-assurance/>). You click the Enabled checkbox, say which VLANs you want to inspect, and get back to raging about the user who plugged the LAN1 port of a Netgear router into your wall jack.
 

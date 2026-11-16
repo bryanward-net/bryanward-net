@@ -7,11 +7,13 @@ tags: ["python", "rnr", "ssid", "wifi"]
 ---
 While listening to [Clear to Send Episode 308 “Reduced Neighbor Report”](https://www.cleartosend.net/cts-308-reduced-neighbor-report/), Francois and Jiri posed a challenge to develop a Short SSID translator… Challenge Accepted!
 
+<!--more-->
+
 I strongly encourage you to listen to the episode.
 
 What is a Short SSID? Well, it’s a new piece of an 802.11 Beacon that is designed to assist with roaming to the 6GHz (Wi-Fi 6E) band. SSIDs broadcasting on the usual 2.4GHz and 5GHz bands can include this information within the Reduced Neighbor Report information element to inform a client that a network exists in a band that it may not have yet scanned. Since there are [so many 6GHz channels](https://www.linkedin.com/pulse/updated-unlicensed-spectrum-charts-keith-parsons?trk=public_profile_article_view) available, this helps to reduce the time needed for off-channel scanning and provide a client device with known [good roaming candidates](https://www.extremenetworks.com/extreme-networks-blog/the-off-road-trail-to-6-ghz-ap-discovery/).
 
-![](/assets/images/2022-11-30-image1.png)
+![image]({{ "/assets/img/posts/2022-11-30-image1.png" | relative_url }})
 
 It’ll be just another second…
 
@@ -29,7 +31,7 @@ IEEE 802.11-2020 9.4.2.170.3 defines how the Short SSID is calculated. If you wa
 
 If you want to calculate CRC-32 values of your own, there are numerous ways to do that. The simplest is to use <https://crc32.online/>or another similar site. You can also use Python libraries like [binascii](https://docs.python.org/3/library/binascii.html#binascii.crc32) and [zlib](https://docs.python.org/3/library/zlib.html#zlib.crc32) to do this programmatically. Feeding in an SSID as the input data should yield the same 4-byte-long hexadecimal value as the RNR uses.
 
-![](/assets/images/2022-11-30-image2.png)
+![image]({{ "/assets/img/posts/2022-11-30-image2.png" | relative_url }})
 
 I got [the same value that Jiri Brejcha shared in his PCAPs](https://twitter.com/jiribrejcha/status/1591188679086571520?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1591188679086571520%7Ctwgr%5Ece44dc049df69be118c8f55cafa23f4780973ea4%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.cleartosend.net%2Fcts-308-reduced-neighbor-report%2F) during his recording of the Clear to Send podcast!
 

@@ -7,6 +7,8 @@ tags: ["cwna", "notes", "wifi"]
 ---
 Some notes as I study for the CWNA exam.
 
+<!--more-->
+
 **PLCP – Physical Layer *Convergence* Protocol**Service within the PHY layer that receives (or sends) data from the upper layers (2-7). Interaction point between the PHY (Layer 1) and MAC (Layer 2).
 
 **PPDU – PLCP Protocol Data Unit**What is actually transmitted (or received) by the physical medium (in this case, RF symbols)

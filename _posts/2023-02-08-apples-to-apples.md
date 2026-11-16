@@ -7,6 +7,8 @@ tags: ["mdns", "wifi", "wlpc"]
 ---
 An analysis of the effects of mDNS and other traffic on a campus WLAN.
 
+<!--more-->
+
 This is a presentation given at the Wireless LAN Professionals Conference (WLPC) in Phoenix, AZ, USA in February 2023. The recording of this presentation is available here: <https://www.youtube.com/watch?v=miRV8qDOKBE>
 
 An “extended cut” can be listened to on the Heavy Networking podcast at <https://packetpushers.net/podcast/heavy-networking-673-multicast-dns-gone-wild-on-your-wlan/>

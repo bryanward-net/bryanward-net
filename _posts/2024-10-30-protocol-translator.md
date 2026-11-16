@@ -7,6 +7,8 @@ tags: ["qlab"]
 ---
 Here’s a quick one. Sometimes you need to get two apps to talk to each other, but one only supports TCP and the other only supports UDP. (In my case, I’m hooking up my [Axis Video Doorbell](https://www.axis.com/products/axis-a8105-e/support) to trigger sound effects (and other things) in [QLab](https://qlab.app/) for some Halloween fun.)
 
+<!--more-->
+
 The Axis doorbell allows you to send raw TCP messages when the button is pressed. It does not support sending raw UDP. QLab can listen for raw UDP, but it only listens for a specific and more complicated protocol ([OSC](https://ccrma.stanford.edu/groups/osc/index.html)) via TCP. I didn’t want to deal with implementing the OSC checksums and datatypes by hand, so I figured I’d just convert the TCP to UDP with this neat one-liner:
 
 ```

@@ -7,7 +7,9 @@ tags: ["cellular", "juniper", "junos", "LTE", "sim card", "verizon"]
 ---
 The [Juniper SRX320](https://www.juniper.net/us/en/products-services/security/srx-series/datasheets/1000550.page) is a pretty powerful little firewall (and router, switch, etc.). I mean, just listen to that fan when it boots up! Or take a look at the AC adapter! That’s some power! (Well-known fruit brand charger shown for scale.)
 
-![](/assets/images/2019-10-28-image1.png)
+<!--more-->
+
+![image]({{ "/assets/img/posts/2019-10-28-image1.png" | relative_url }})
 
 But it’s actually an awesome device. It has:
 
@@ -61,7 +63,7 @@ International Mobile Equipment Identification (IMEI/MEID): XXXXXXXXXXXXXXX
 ...
 ```
 
-![](/assets/images/2019-10-28-image2.png)
+![image]({{ "/assets/img/posts/2019-10-28-image2.png" | relative_url }})
 
 Verizon will not activate a data plan or assign a line to an account until you have both the SIM card and device in hand. So, wait a couple of days for the SIM card to arrive in the mail. From Verizon, SIM cards and standard shipping are always free. Don’t let them tell you otherwise. You can also pick up a SIM card from a Verizon corporate store.
 

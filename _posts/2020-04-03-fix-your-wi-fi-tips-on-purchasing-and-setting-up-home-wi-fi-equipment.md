@@ -9,9 +9,12 @@ tags: ["wifi"]
 
 ---
 
-![](/assets/images/2020-04-03-image1.png)
+![image]({{ "/assets/img/posts/2020-04-03-image1.png" | relative_url }})
 
 > *These steps won’t solve all issues, but they may help resolve some common problems with home Wi-Fi networks.*
+>
+> 
+<!--more-->
 
 ## **It might not be your Wi-Fi’s fault!**
 

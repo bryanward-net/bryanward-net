@@ -7,6 +7,8 @@ tags: ["mist"]
 ---
 Mist APs seem to maintain their channel width upon detecting a DFS event. They do not narrow down to 20MHz. They also do not all jump to channel 36 upon such an event, they seem to pick a next-best channel.
 
-![](/assets/images/2020-02-07-image1.png)
-![](/assets/images/2020-02-07-image2.png)
-![](/assets/images/2020-02-07-image3.png)
+<!--more-->
+
+![image]({{ "/assets/img/posts/2020-02-07-image1.png" | relative_url }})
+![image]({{ "/assets/img/posts/2020-02-07-image2.png" | relative_url }})
+![image]({{ "/assets/img/posts/2020-02-07-image3.png" | relative_url }})

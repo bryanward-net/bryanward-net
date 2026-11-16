@@ -7,6 +7,8 @@ tags: ["mist", "wifi"]
 ---
 When using bonded channels in 5GHz (40MHz or 80MHz bandwidth), Mist RRM uses the lower channel of the bond as the primary. (ex, if bonding channels 44 and 48, it will select 44 as the primary channel).
 
+<!--more-->
+
 However, if setting channels via API, you’ll want to make sure to only “allow” the lower channels, otherwise the AP might decide to use the upper channel as the primary.
 
 Example, don’t set this in the radio\_config API:

@@ -7,6 +7,8 @@ tags: ["juniper", "junos"]
 ---
 Sure, you could follow the instructions here: <https://www.juniper.net/documentation/en_US/junos/topics/topic-map/recovery-using-emergency-boot.html#id-creating-an-emergency-boot-device-for-routers>
 
+<!--more-->
+
 or just follow these easier instructions instead!
 
 Download the Junos Installation Media for the version you wish to install. Go to <https://support.juniper.net/support/downloads/>
@@ -15,29 +17,31 @@ Download the Junos Installation Media for the version you wish to install. Go to
 
 To download the gold star/recommended version, make sure you’ve selected Junos SR from the drop-down list.
 
-![](/assets/images/2019-09-26-image1.png)
+![image]({{ "/assets/img/posts/2019-09-26-image1.png" | relative_url }})
 
 Then, scroll down to Installation Media. Note, not all versions of Junos have this available as a download. In that case, you’ll have to download the most recent previous version of the install media and perform a software update to get to the version you want.
 
 Download the USB version of the file, the .gz filetype, not the .tgz. Verify the checksum of the file you downloaded matches what Juniper says it should be.
 
-![](/assets/images/2019-09-26-image2.png)
+![image]({{ "/assets/img/posts/2019-09-26-image2.png" | relative_url }})
 
 If you don’t already have it, download and install Balena Etcher. <https://www.balena.io/etcher/> Then, run it.
 
 Click Select Image and browse to the .gz file you just downloaded from Juniper. Don’t extract the .gz file, just load it into Etcher as it was when you downloaded it.
 
-![](/assets/images/2019-09-26-image3.png)
+![image]({{ "/assets/img/posts/2019-09-26-image3.png" | relative_url }})
 
 Insert your USB drive or select an already inserted drive.
 
 Click Flash!
 
-![](/assets/images/2019-09-26-image4.png)
+![image]({{ "/assets/img/posts/2019-09-26-image4.png" | relative_url }})
 
 Wait. Get a coffee.
 
-![](/assets/images/2019-09-26-image5.png)![](/assets/images/2019-09-26-image6.png)
+![image]({{ "/assets/img/posts/2019-09-26-image5.png" | relative_url }})
+
+![image]({{ "/assets/img/posts/2019-09-26-image6.png" | relative_url }})
 
 Unmount/Eject the USB drive from your OS. You now have a working Junos Recovery USB Drive!
 
@@ -45,19 +49,19 @@ To use it to recover a Juniper Switch, insert the Recovery USB Drive you just cr
 
 Pay attention to the boot process. You’re watching for “Autoboot in 3 seconds… (press Ctrl-C to interrupt)”
 
-![](/assets/images/2019-09-26-image7.png)
+![image]({{ "/assets/img/posts/2019-09-26-image7.png" | relative_url }})
 
 Press Ctrl-C. Then, press 4 to enter the Boot Menu.
 
-![](/assets/images/2019-09-26-image8.png)
+![image]({{ "/assets/img/posts/2019-09-26-image8.png" | relative_url }})
 
 Press 4 again to boot from your USB Recovery Drive.
 
-![](/assets/images/2019-09-26-image9.png)
+![image]({{ "/assets/img/posts/2019-09-26-image9.png" | relative_url }})
 
 Junos will boot from the USB Recovery Drive, install it to the flash on the switch, and eventually present you with a login: prompt. At this point, your switch has been recovered/upgraded/downgraded to the version of Junos you flashed to the USB drive. Remove the USB drive from the switch, and reboot/powercycle for good measure.
 
-![](/assets/images/2019-09-26-image10.png)
+![image]({{ "/assets/img/posts/2019-09-26-image10.png" | relative_url }})
 
 Have fun!
 

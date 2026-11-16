@@ -7,6 +7,8 @@ tags: ["lorawan"]
 ---
 The Seeed SenseCap T1000 is an awesome little LoRaWAN device. A longer blog post about them will happen in the future, but for now I wanted to just quickly document the Data Rate setting.
 
+<!--more-->
+
 This post contains affiliate links, through which I may earn a commission and/or referral fee on purchases made.
 
 Because this is not very clearly documented anywhere else, here’s what the LoRaWAN Data Rates in the [SenseCraft App](https://sensecap-mate-download.seeed.cn/) correspond to for LoRa Spreading Factors:

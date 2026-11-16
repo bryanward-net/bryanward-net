@@ -7,6 +7,8 @@ tags: ["juniper"]
 ---
 There are some known issues with Juniper EX Switches and some earlier builds of Junos 18 regarding having insufficient free storage space when attempting to upgrade the Junos software. I’m going to detail 2 methods of getting the upgrade to work while in this situation.
 
+<!--more-->
+
 ### One
 
 This solution has worked for 90%+ of my production switches. It involves some cleanup of old files that may be residing on the storage, copying the new software installer to a temp directory, applying a patch which ~~puts the installer under local anesthesia~~ makes the installer calculate free space a bit differently, and then forces the install to clean things up as it goes.

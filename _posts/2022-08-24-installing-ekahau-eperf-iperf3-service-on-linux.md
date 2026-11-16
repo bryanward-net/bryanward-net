@@ -7,6 +7,8 @@ tags: []
 ---
 Ekahau makes a modified version of iPerf3 (called ePerf) that is designed to work better with their Site Survey application. Installing on Linux (RHEL, specifically in this guide), is fairly straightforward, but is poorly documented. I aim to correct that.
 
+<!--more-->
+
 You can download ePerf from here: <https://sw.ekahau.com/download/eperf/>
 
 Ekahau’s official documentation can be found here: <https://support.ekahau.com/hc/en-us/articles/115008973207-Ekahau-ePerf-Server>

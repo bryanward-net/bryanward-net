@@ -7,6 +7,8 @@ tags: ["erspan", "gre", "junos", "linux", "ntop", "wireshark"]
 ---
 ERSPAN is a great way to remotely troubleshoot a wired connection remotely. Even before the work-from-home era, I dreaded having to head out to a location, setup a mirror port, and connect a laptop to grab a few packets. The process of getting to the location often took longer than solving the actual issue…
 
+<!--more-->
+
 Encapsulated Remote Switch Port Analyzer is where a switch or router (or Linux server…) sets up a port mirror, but then instead of dumping the mirrored traffic on another physical interface, it encapsulates it inside a GRE tunnel.
 
 Generic Routing Encapsulation allows Layer-2 data to be routed over a Layer-3 network. What this means is that you can send this mirrored traffic to any device with Layer-3 reachability to the source of the traffic.
@@ -31,17 +33,17 @@ ip proto 0x2f
 
 To set a capture filter, before starting a capture, click the Gear icon…
 
-![](/assets/images/2022-10-25-image1.png)
+![image]({{ "/assets/img/posts/2022-10-25-image1.png" | relative_url }})
 
 Then, select the interface you wish to capture on and enter the filter in the textbox at the bottom of the dialog window.
 
-![](/assets/images/2022-10-25-image2.png)
+![image]({{ "/assets/img/posts/2022-10-25-image2.png" | relative_url }})
 
 0x2F == 47 decimal. IP Protocol 47 is GRE. Yes, [IP Protocol](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml). GRE does not use TCP or UDP! Keep this in mind if you have to adjust firewall rules along the path. (GUE also exists, which is GRE within UDP, but that’s not what is used here for ERSPAN.)
 
 Start the capture in Wireshark, and assuming you’ve configured your source correctly and that there’s Layer-3 reachability, you should start receiving frames!
 
-![](/assets/images/2022-10-25-image3.png)
+![image]({{ "/assets/img/posts/2022-10-25-image3.png" | relative_url }})
 
 Wireshark 4 has additional display filters that make parsing this sort of traffic a bit easier.
 

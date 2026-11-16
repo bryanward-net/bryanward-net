@@ -7,6 +7,8 @@ tags: ["juniper", "junos", "poe"]
 ---
 This is a continuance of my earlier article “[Recovering from Juniper PoE Controller DEVICE\_FAIL](https://bryanward.net/wp/2019/08/05/recovering-from-juniper-poe-controller-device_fail/)“.
 
+<!--more-->
+
 Due to chip supply constraints, Juniper has had to swap the PoE controller chip in some of their switches.  
 The different chip requires different firmware, and so the file `/usr/lib/poe_latest.s19` may no longer exist.  
 Newer versions of Junos are required to use this different model PoE chip as well.

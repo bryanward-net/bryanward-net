@@ -7,6 +7,8 @@ tags: ["code", "visio"]
 ---
 If you’re like me, you’ve probably got every stencil from every vendor always open in Visio. This macro code will close them all in one go.
 
+<!--more-->
+
 ```
 Sub CloseAllStencils()
 
