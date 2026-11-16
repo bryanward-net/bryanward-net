@@ -7,7 +7,7 @@ layout: default
 <div style="padding-top: 30px;">
   {% for post in site.posts %}
     <div style="padding-bottom: 30px;">
-      <strong style="margin-bottom: 4px;"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></strong>
+      <h2 style="margin-bottom: 4px;"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
         <small>{{ post.date | date: "%-d %B %Y" }}</small>
         <p>
           {{ post.excerpt }}
