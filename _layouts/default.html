@@ -20,7 +20,7 @@
     <div class="wrapper">
         <header>
             <div style="text-align: center">
-                <h1 class="title"><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+                <h1 class="title" style="margin-bottom: 4px;"><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
     
                 {% if site.logo and site.logo2 %}
                 <img src='{{site.logo | relative_url}}' onmouseover="this.src='{{site.logo2 | relative_url}}';" onmouseout="this.src='{{site.logo | relative_url}}';" alt="Logo" style="height: 128px; width: 128px;" />
@@ -45,7 +45,7 @@
                 <hr />
                 <small>
                 I certify that none of the text contained within the articles on this site has been generated or
-                modified by any AI technology.
+                edited by any AI technology.
                 <br />
                 I've been a fan of the em dash for many years and am known to use big
                 words from time to time.
