@@ -5,7 +5,8 @@ date: "2020-04-03T16:46:38"
 categories: ["Uncategorized"]
 tags: ["wifi"]
 ---
-[Download a PDF copy of this article](http://bryanward.host.dartmouth.edu/wp/wp-content/uploads/2020/04/Fix-Your-Wi-Fi-BryanWard.net_.pdf)
+
+[Download a PDF copy of this article]({{ "assets/files/Fix-Your-Wi-Fi-BryanWard-net.pdf" | relative_url }})
 
 ---
 
