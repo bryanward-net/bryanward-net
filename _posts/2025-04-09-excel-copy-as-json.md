@@ -12,3 +12,5 @@ A new twist on my existing [Copy As CSV](https://bryanward.net/wp/2020/01/17/exc
 ![image]({{ "/assets/img/posts/2025-04-09-image1.gif" | relative_url }})
 
 Install this in Excel using the same instructions as provided in my [Copy as CSV](https://bryanward.net/wp/2020/01/17/excel-copy-as-csv/) post, but just use the below code instead. It will return a list of dicts, with keys based on the first row of the selected cells. Each row in the selection becomes an item in the list. All values are treated as strings for simplicity.
+
+{% gist a8f9a31440c74cbf9112f2a1ccf7f04f %}
