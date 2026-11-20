@@ -17,5 +17,5 @@ Credit goes to the United Nations Economic Commission for Europe, via Wikipedia,
 
 [Download]({{ "assets/files/UN-Battery.pdf" | relative_url }})
 
-<embed src="{{ "assets/files/UN-Battery.pdf" | relative_url }}" type="application/pdf" width="100%" height="290px" />
+<embed src="{{ "assets/files/UN-Battery.pdf" | relative_url }}" type="application/pdf" width="100%" height="500px" />
 
