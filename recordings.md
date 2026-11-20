@@ -1,3 +1,8 @@
+**[Inside Dartmouth College Network: Better Visibility, Faster Troubleshooting](https://marketo.akips.com/OD_WBN_2026_10_Dartmouth_AKIPS_OnDemand.html)**\
+Akips Network Monitoring
+*Oct 2026*
+
+
 **[Ripping off the Bandaid](https://www.youtube.com/watch?v=Rcbv_wha5Ig)**\
 Wireless LAN Professionals Conference (WLPC) Phoenix 2025\
 *20 Feb 2025*
