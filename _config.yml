@@ -17,3 +17,5 @@ paginate: 2 # amount of posts to show
 paginate_path: /page:num/
 github:
     default-mime-type: text/html
+feed:
+    excerpt_only: true
